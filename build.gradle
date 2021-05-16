@@ -20,7 +20,7 @@ apply plugin: 'io.spring.dependency-management'
 //    id 'java'
 //}
 
-group 'springboot.aws.toy'
+group 'com.aws.toy'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -29,14 +29,17 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.projectlombok:lombok:1.18.18'
+    annotationProcessor 'org.projectlombok:lombok:1.18.18'
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
 
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
 
-test {
-    useJUnitPlatform()
-}
+//test {
+//    useJUnitPlatform()
+//}
