@@ -1,4 +1,4 @@
-package com.aws.toy.springboot.dto;
+package com.aws.toy.springboot.web.dto;
 
 
 import lombok.Getter;

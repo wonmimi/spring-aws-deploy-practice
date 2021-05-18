@@ -1,6 +1,6 @@
 package com.aws.toy.springboot;
 
-import com.aws.toy.springboot.dto.HelloResponseDto;
+import com.aws.toy.springboot.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

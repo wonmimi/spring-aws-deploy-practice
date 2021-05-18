@@ -1,6 +1,5 @@
 package com.aws.toy.springboot.web.dto;
 
-import com.aws.toy.springboot.dto.HelloResponseDto;
 import org.junit.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
