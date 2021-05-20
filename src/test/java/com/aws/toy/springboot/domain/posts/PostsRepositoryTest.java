@@ -1,6 +1,5 @@
 package com.aws.toy.springboot.domain.posts;
 
-import org.hamcrest.core.IsEqual;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,11 +16,11 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class PostsRepositoryTest {
 
     @Autowired
-    PostRepository postRepository;
+    PostsRepository postsRepository;
 
     @After
     public void cleanup(){
-        postRepository.deleteAll();
+        postsRepository.deleteAll();
     }
 
     @Test
@@ -30,14 +29,14 @@ public class PostsRepositoryTest {
         String title = "테스트 게시글";
         String content = "테스트 본문";
 
-        postRepository.save(Posts.builder()
+        postsRepository.save(Posts.builder()
                 .title(title)
                 .content(content)
                 .author("devwm@naver.com")
                 .build());
 
         //when
-        List<Posts> postsList = postRepository.findAll();
+        List<Posts> postsList = postsRepository.findAll();
 
         //then
         Posts posts = postsList.get(0);
