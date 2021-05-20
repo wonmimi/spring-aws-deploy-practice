@@ -1,5 +1,6 @@
 package com.aws.toy.springboot.domain.posts;
 
+import com.aws.toy.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor //  기본생성자 자동추가
 @Entity // : 테이블과 링크될 클래스 , 클래스의 카멜케이스 이름을 언더스코어 네이밍 (camel_case) 으로 테이블 이름과 매칭
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id // : 해당 테이블의 PK필드
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
