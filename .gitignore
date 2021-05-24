@@ -1,12 +1,14 @@
 # Project exclude paths
 .gradle
 .idea
-*.iws
-*.iml
-*.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+application-oauth.properties
+
+#*.iws
+#*.iml
+#*.ipr
+#!**/src/main/**/out/
+#!**/src/test/**/out/
 
 # unversiond Files
 build/
