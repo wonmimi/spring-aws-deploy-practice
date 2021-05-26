@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
-@EnableJpaAuditing // JPA auditing 활성화
+//@EnableJpaAuditing // => SpringBootApplication 과 분리 하므로 주석.
 @SpringBootApplication
 public class Application {
         public static void main(String[] args){
